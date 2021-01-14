@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lora', serif;
 
 html, body{
-    overflow:hidden;
+    ${'' /* overflow:hidden; */}
 }
 `
 

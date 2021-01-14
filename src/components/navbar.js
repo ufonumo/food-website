@@ -75,11 +75,11 @@ const NavBtn = styled.div`
 `
 
 
-export default function Navbar() {
+export default function Navbar({toggle}) {
     return (
         <Nav>
             <Logo to='/'>WEANER'S FOOD</Logo>
-            <MenuBars></MenuBars>
+            <MenuBars onClick={toggle}/>
             <NavMenu>
                 {MenuData.map((item, index) =>(
                     <NavMenuLinks to={item.Link} key={index}>
